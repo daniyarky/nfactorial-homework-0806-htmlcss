@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    padding: 0;
+    margin:0;
+    background-color: greenyellow;
+    overflow: hidden; 
+    /* overflow? */
+  }
+
+  .container {
+    /* position: relative; */
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+  
+    bottom: 1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left .volume{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .hidden {
+    display: block;
+  }
+  .shown {
+    display: flex;
+  }
+  
+
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+  }
+  .center{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  
+  #video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  #btn-change-bckgrnd {
+    border-radius: 30px;
+    border: 5px solid green;
+    background-color: darkblue;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .playpause-track {
+    margin: 300px;
+  }
+  
+  
+  .progress-bar {
+    grid-area: six;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green; 
+  }
+  
+  #progressBar {
+    appearance: none;
+    height: 5px;
+    background: white;
+    width: 57.5%;
+    outline: none;
+    border-radius: 30px;
+  }
+  
+  #progressBar::-webkit-slider-thumb {
+    appearance: none;
+    height: 11px;
+    width: 11px;
+    outline: none;
+    background: blueviolet;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .track-time {
+    grid-area: five;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+  }
+  
+  #currentTime {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: yellow;
+  }
+  
+  #durationTime {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: yellow;
+    text-shadow: 0 0 15px yellow;
+  }
